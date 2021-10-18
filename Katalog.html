@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Каталог</title>
     <style>
+        @import url("a.css");
+        </style>
+    <style>
         A {
          text-decoration: none;
         }
@@ -22,55 +25,50 @@
          color: #000000; 
         }
        </style>
-       <style>
-        .photo img {
-         padding: 20px; /* Поля вокруг изображения */
-         margin-right: 10px; /* Отступ справа */
-         margin-bottom: 10px; /* Отступ снизу */
-         outline: 1px solid #666; /* Параметры рамки */
-         background: #f0f0f0; /* Цвет фона */
-         float: left; /* Обтекание по правому краю */
-         outline-style: groove;
-         outline-width: 7px;
-         outline-color: #ff0707;
-        }
-       </style>
-       <style>
-        .page-header {
-       background: #ff5e00;
-       margin-bottom: 10px;
-       border-bottom: 1px solid #E1E1E1;
-       }
-      </style>
 </head>
 <body>
-    <header class="page-header">
-        <h1 align="center">каталог</h1>
-    </header>
-    <div>
-        <hr noshade size="1">
-        <div class="photo">
-            <img src="akulaMal.jpg" width="400" height="300">
+    <div class='container'>
+        <header class="page-header">
+            <ul>
+                <li class='menu-item'>
+                <a class='menu-link' href='w1.html'>Главная</a>
+                </li>
+                <li class='menu-item'>
+                <a class='menu-link' href='Katalog.html'>Каталог</a>
+                </li>
+                <li class='menu-item'>
+                <a class='menu-link' href='AboutUs.html'>О нас</a>
+                </li>
+            </ul>
+            <h1 align="center">каталог</h1>
+        </header>
+        <div class='catalog-items'>
+
+            <div class='item-card'>
+                <a href="Akula.html"><img class="item-img" src="akulaMal.jpg"></a>
+                <h3 class="name">Akula</h3>
+                <h3 class="price">25$</h3>
+                <p class="description">самая большая в мире подводная лодка</p>
+                <button class='buy'>Купить</button>
+            </div>
+
+            <div class='item-card'>
+                <a href="P658.html"><img class="item-img" src="proj658Mal.jpg"></a>
+                <h3 class="name">658</h3>
+                <h3 class="price">25$</h3>
+                <p class="description">первая советская АПЛ с ЯВ</p>
+                <button class='buy'>Купить</button>
+            </div>
+
+            <div class='item-card'>
+                <a href="LenKom.html"><img class="item-img" src="LenKomsMal.jpg"></a>
+                <h3 class="name">Lenkom</h3>
+                <h3 class="price">25$</h3>
+                <p class="description">LenKom</p>
+                <button class='buy'>Купить</button>
+            </div>
         </div>
-        <p><font size= 5><tt>самая большая в мире подводная лодка</tt></font></p>
-        <a href="Akula.html"><font size=3><tt>перейти к покупке</tt></font></a>
-        <hr noshade size="1">
-    </div>
-    <div>
-        <div class="photo">
-            <img src="proj658Mal.jpg" width="400" height="300">
-        </div>
-        <p><font size= 5><tt>первая советская АПЛ с баллистическим вооружением</tt></font></p>
-        <a href="P658.html"><font size=3><tt>перейти к покупке</tt></font></a>
-        <hr noshade size="1">
-    </div>
-    <div>
-        <div class="photo">
-            <img src="LenKomsMal.jpg" width="400" height="300">
-        </div>
-        <p><font size= 5><tt>первая советская АПЛ</tt></font></p>
-        <a href="LenKom.html"><font size=3><tt>перейти к покупке</tt></font></a>
-        <hr noshade size="1">
+        <footer class="page-footer"><a>какой-то текст</a></footer>
     </div>
 </body>
 </html>
