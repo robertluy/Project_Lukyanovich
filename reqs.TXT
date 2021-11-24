@@ -1,0 +1,5 @@
+UPDATE users SET dor = SUBSTR(dor, 7, 4) || '-' || SUBSTR(dor, 4, 2) || '-' || SUBSTR(dor, 1, 2);
+SELECT login FROM users ORDER BY dor DESC LIMIT 1;
+SELECT DISTINCT(SUBSTR(dor, 1, 4)) FROM users;
+SELECT COUNT(*) as total_items FROM items;
+SELECT AVG((julianday('now') - julianday(dor)) / 365) FROM users WHERE (strftime('%m','now') - strftime('%m',dor)) <= 2;
